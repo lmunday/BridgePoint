@@ -1,0 +1,59 @@
+!SESSION 2026-03-16 14:03:09.309 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=17.0.18
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2026-03-16 14:05:43.980
+!MESSAGE Invalid workspace location to be set for Edge browser.
+!STACK 0
+java.net.URISyntaxException: Illegal character in path at index 35: file:/E:/BridgePoint_Workspace/AMOS Workspace/.metadata/.plugins/org.eclipse.swt
+	at java.base/java.net.URI$Parser.fail(URI.java:2974)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3145)
+	at java.base/java.net.URI$Parser.parseHierarchical(URI.java:3227)
+	at java.base/java.net.URI$Parser.parse(URI.java:3175)
+	at java.base/java.net.URI.<init>(URI.java:623)
+	at java.base/java.net.URL.toURI(URL.java:1056)
+	at org.eclipse.ui.internal.Workbench.setEdgeDataDirectory(Workbench.java:530)
+	at org.eclipse.ui.internal.Workbench.<init>(Workbench.java:461)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:598)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:570)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:178)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+
+!ENTRY org.eclipse.core.jobs 4 2 2026-03-16 14:06:14.311
+!MESSAGE An internal error occurred during: "Update Job".
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: D:\BridgePoint\p2\org.eclipse.equinox.p2.engine\profileRegistry\DefaultProfile.profile\.lock (Access is denied)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:113)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.restore(SimpleProfileRegistry.java:545)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfileMap(SimpleProfileRegistry.java:380)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:263)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:192)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.run(AutomaticUpdateScheduler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.FileNotFoundException: D:\BridgePoint\p2\org.eclipse.equinox.p2.engine\profileRegistry\DefaultProfile.profile\.lock (Access is denied)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:344)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:259)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:213)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:43)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:233)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:199)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	... 6 more

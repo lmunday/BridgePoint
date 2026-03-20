@@ -1,0 +1,91 @@
+-- BP 7.1.6 content: InstanceStateMachine syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO SM_ISM
+	VALUES ("78e19b7c-e987-46d2-81dc-e223a7c2b35d",
+	"5106a3dd-66ac-45ec-8c94-9d233005ce88");
+INSERT INTO SM_SM
+	VALUES ("78e19b7c-e987-46d2-81dc-e223a7c2b35d",
+	'',
+	0);
+INSERT INTO SM_MOORE
+	VALUES ("78e19b7c-e987-46d2-81dc-e223a7c2b35d");
+INSERT INTO SM_STATE
+	VALUES ("28455fe4-4102-4f4a-8758-26940bccd795",
+	"78e19b7c-e987-46d2-81dc-e223a7c2b35d",
+	"00000000-0000-0000-0000-000000000000",
+	'Processing_Payment',
+	1,
+	0);
+INSERT INTO SM_MOAH
+	VALUES ("a272283e-62d9-4daf-a0ee-50289b225bd5",
+	"78e19b7c-e987-46d2-81dc-e223a7c2b35d",
+	"28455fe4-4102-4f4a-8758-26940bccd795");
+INSERT INTO SM_AH
+	VALUES ("a272283e-62d9-4daf-a0ee-50289b225bd5",
+	"78e19b7c-e987-46d2-81dc-e223a7c2b35d");
+INSERT INTO SM_ACT
+	VALUES ("a272283e-62d9-4daf-a0ee-50289b225bd5",
+	"78e19b7c-e987-46d2-81dc-e223a7c2b35d",
+	1,
+	'send Payment_Port::processPayment(paymentType:1, amount:10, paymentId:payment.paymentId);
+',
+	'',
+	0);
+INSERT INTO GD_MD
+	VALUES ("8c02fdb1-3f9e-4c17-b5e6-af952dd1a495",
+	8,
+	"78e19b7c-e987-46d2-81dc-e223a7c2b35d",
+	40,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	0,
+	0,
+	0,
+	'4.1.17',
+	'AMOS Workspace::Components::Component Diagram::Restaurant::Classes::Payment::Instance State Machine');
+INSERT INTO GD_GE
+	VALUES ("2a400a06-568b-404d-b877-0b837f5fb76e",
+	"8c02fdb1-3f9e-4c17-b5e6-af952dd1a495",
+	"28455fe4-4102-4f4a-8758-26940bccd795",
+	41,
+	0,
+	'AMOS Workspace::Components::Component Diagram::Restaurant::Classes::Payment::Instance State Machine::Processing_Payment');
+INSERT INTO GD_SHP
+	VALUES ("2a400a06-568b-404d-b877-0b837f5fb76e");
+INSERT INTO GD_NCS
+	VALUES ("2a400a06-568b-404d-b877-0b837f5fb76e");
+INSERT INTO DIM_ND
+	VALUES (169.000000,
+	97.000000,
+	"2a400a06-568b-404d-b877-0b837f5fb76e");
+INSERT INTO DIM_GE
+	VALUES (4176.000000,
+	3096.000000,
+	"2a400a06-568b-404d-b877-0b837f5fb76e",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("2a400a06-568b-404d-b877-0b837f5fb76e",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_DIA
+	VALUES ("8c02fdb1-3f9e-4c17-b5e6-af952dd1a495",
+	'',
+	1.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO O_OBJ_PROXY
+	VALUES ("5106a3dd-66ac-45ec-8c94-9d233005ce88",
+	'Payment',
+	11,
+	'PAYM',
+	'',
+	"00000000-0000-0000-0000-000000000000",
+	'../Payment.xtuml');
